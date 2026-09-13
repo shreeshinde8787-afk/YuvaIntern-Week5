@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TravelVista Single Page Application simulation">
+    <title>TravelVista SPA</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container navbar">
+
+            <a href="/" class="logo" data-route="home">
+                Travel<span>Vista</span>
+            </a>
+
+            <button
+                type="button"
+                class="menu-btn"
+                id="menuBtn"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="navLinks">
+                <span aria-hidden="true">☰</span>
+            </button>
+
+            <nav aria-label="Main navigation">
+                <ul class="nav-links" id="navLinks">
+                    <li>
+                        <a href="/" data-route="home">Home</a>
+                    </li>
+                    <li>
+                        <a href="/destinations" data-route="destinations">Destinations</a>
+                    </li>
+                    <li>
+                        <a href="/about" data-route="about">About</a>
+                    </li>
+                    <li>
+                        <a href="/contact" data-route="contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- Main SPA Container -->
+    <main id="app" class="app-container" tabindex="-1">
+        <!-- JavaScript dynamically loads page content here -->
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 TravelVista. All rights reserved.</p>
+            <p>Yuva Intern – Week 5 SPA Project</p>
+        </div>
+    </footer>
+
+</body>
+</html>
